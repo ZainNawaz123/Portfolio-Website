@@ -3,7 +3,7 @@ layout: page
 title: Projects
 icon: fas fa-computer
 order: 2
-permalink: /Experience/
+permalink: /projects/
 ---
 
 <link
@@ -23,9 +23,11 @@ permalink: /Experience/
       <div class="card-head">
         <img class="thumb" src="/assets/img/studyguide.jpg" alt="UofT crest" />
         <div class="title">
-          <h3><a
-            href="https://ece-243-digital-textbook.vercel.app/"
-            >ECE243 Digital Textbook (Ongoing) </a </h3>
+          <h3>
+            <a href="https://ece-243-digital-textbook.vercel.app/">
+              ECE243 Digital Textbook (Ongoing)
+            </a>
+          </h3>
         </div>
       </div>
 
@@ -33,13 +35,21 @@ permalink: /Experience/
         <p class="blurb">
           Built an interactive, cleaner web version of ECE243 course notes to
           make studying faster and more intuitive, including structured notes
-          and practice quizzes
-          >
+          and practice quizzes >
         </p>
         <ul class="bullets">
-          <li>Reformatted lecture notes into a clean, readable digital layout optimized for quick studying.</li>
-          <li>Developed interactive quiz pages to help students practice binary, representation, and data-type concepts.</li>
-          <li>Deployed the project using Next.js and Vercel, with responsive UI and structured navigation.</li>
+          <li>
+            Reformatted lecture notes into a clean, readable digital layout
+            optimized for quick studying.
+          </li>
+          <li>
+            Developed interactive quiz pages to help students practice binary,
+            representation, and data-type concepts.
+          </li>
+          <li>
+            Deployed the project using Next.js and Vercel, with responsive UI
+            and structured navigation.
+          </li>
         </ul>
         <div class="tags">
           <span>Next.js</span><span>React</span><span>Typescript</span
@@ -64,22 +74,31 @@ permalink: /Experience/
 
       <div class="card-body">
         <p class="blurb">
-          Designed and implemented a fully hardware-based random maze generator, solver, and VGA renderer in Verilog on a DE1-SoC FPGA (no CPU/software)
+          Designed and implemented a fully hardware-based random maze generator,
+          solver, and VGA renderer in Verilog on a DE1-SoC FPGA (no
+          CPU/software)
         </p>
         <ul class="bullets">
-          <li>Built a dual-port BRAM memory interface to support maze generation (write) and VGA rendering (read)</li>
           <li>
-            Implemented DFS backtracking logic with wall-state and visited-cell tracking to generate perfect mazes
+            Built a dual-port BRAM memory interface to support maze generation
+            (write) and VGA rendering (read)
           </li>
-          <li>Developed a VGA rendering pipeline to display maze walls, start/end markers, and an overlaid solution path
-</li>
-          <li>Resolved hardware timing and randomness bugs, eliminating infinite-generation and VGA alignment issues
-</li>
+          <li>
+            Implemented DFS backtracking logic with wall-state and visited-cell
+            tracking to generate perfect mazes
+          </li>
+          <li>
+            Developed a VGA rendering pipeline to display maze walls, start/end
+            markers, and an overlaid solution path
+          </li>
+          <li>
+            Resolved hardware timing and randomness bugs, eliminating
+            infinite-generation and VGA alignment issues
+          </li>
         </ul>
         <div class="tags">
-          <span>FPGA</span><span>Verilog</span
-          ><span>Hardware</span><span>Course Final Project</span
-          ><span>Teamwork</span>
+          <span>FPGA</span><span>Verilog</span><span>Hardware</span
+          ><span>Course Final Project</span><span>Teamwork</span>
         </div>
       </div>
     </article>
@@ -87,7 +106,11 @@ permalink: /Experience/
     <!-- CARD 3 -->
     <article class="card">
       <div class="card-head">
-        <img class="thumb" src="/assets/img/scrabblesolver.jpg" alt="Engineering icon" />
+        <img
+          class="thumb"
+          src="/assets/img/scrabblesolver.jpg"
+          alt="Engineering icon"
+        />
         <div class="title">
           <h3>Unscrabble</h3>
           <div class="meta">Scrabble Move Solver</div>
@@ -96,26 +119,27 @@ permalink: /Experience/
 
       <div class="card-body">
         <p class="blurb">
-          Designed and built a Scrabble solver that evaluates board state and tile rack to rank all legal moves by score
+          Designed and built a Scrabble solver that evaluates board state and
+          tile rack to rank all legal moves by score
         </p>
         <ul class="bullets">
-          <li>Implemented a Trie-based word search engine to efficiently generate legal and valid word placements
-.</li>
           <li>
-            Developed board-aware scoring logic to compute point values
-
+            Implemented a Trie-based word search engine to efficiently generate
+            legal and valid word placements .
+          </li>
+          <li>Developed board-aware scoring logic to compute point values</li>
+          <li>
+            Built an Interactive Scrabble Board UI in Next.js and TypeScript,
+            allowing users to input tiles, board positions, and preview
+            suggested moves
           </li>
           <li>
-Built an Interactive Scrabble Board UI in Next.js and TypeScript, allowing users to input tiles, board positions, and preview suggested moves
-          </li>
-          <li>
-Optimized search by pruning invalid paths early in the Trie search. 
-
+            Optimized search by pruning invalid paths early in the Trie search.
           </li>
         </ul>
         <div class="tags">
-          <span>Typescript</span><span>Trie Algorithm</span><span>Personal Project</span
-          >
+          <span>Typescript</span><span>Trie Algorithm</span
+          ><span>Personal Project</span>
         </div>
       </div>
     </article>
