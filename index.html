@@ -6,32 +6,47 @@ permalink: /
 
 <!-- 🧠 Hero Section -->
 <div class="hero-container">
-  <h1>Hello, I'm <br><span class="typed-text" id="typed"></span></h1>
+  <h1>Hello, I'm <br /><span class="typed-text" id="typed"></span></h1>
   <p class="subtext">Electrical Engineering Student & Photographer</p>
 
   <div class="hero-buttons">
     <a href="https://github.com/ZainNawaz123" target="_blank" class="icon-link">
       <i class="fab fa-github"></i>
     </a>
-    <a href="https://linkedin.com/in/zain-nawaz-221998183" target="_blank" class="icon-link">
+    <a
+      href="https://linkedin.com/in/zain-nawaz-221998183"
+      target="_blank"
+      class="icon-link"
+    >
       <i class="fab fa-linkedin"></i>
     </a>
-    <a href="https://instagram.com/zan.photography_" target="_blank" class="icon-link">
+    <a
+      href="https://instagram.com/zan.photography_"
+      target="_blank"
+      class="icon-link"
+    >
       <i class="fab fa-instagram"></i>
     </a>
   </div>
 
-  <a {{ '/aboutme/' | relative_url }} class="about-button">Find more here →</a>
+  <a href="{{ '/aboutme/' | relative_url }}" class="about-button"
+    >Find more here →</a
+  >
 </div>
 
 <!-- ⌨️ Typed.js Script -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
   var typed = new Typed("#typed", {
-    strings: ['Zain Nawaz', 'A Photographer', 'A Developer', 'An  Engineering Student'],
+    strings: [
+      "Zain Nawaz",
+      "A Photographer",
+      "A Developer",
+      "An  Engineering Student",
+    ],
     typeSpeed: 60,
     backSpeed: 80,
-    loop: true
+    loop: true,
   });
 </script>
 
@@ -59,35 +74,37 @@ permalink: /
     margin-top: 2rem;
   }
 
-.icon-link {
-  margin: 0 10px;
-  font-size: 2rem;
-  color: var(--icon-color, #000); /* fallback */
-  text-decoration: none;
-  transition: transform 0.2s ease, color 0.3s ease;
-}
-
-/* DARK MODE */
-@media (prefers-color-scheme: dark) {
   .icon-link {
-    color: #fff;
+    margin: 0 10px;
+    font-size: 2rem;
+    color: var(--icon-color, #000); /* fallback */
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      color 0.3s ease;
   }
 
-  .icon-link:hover {
-    color: #0ea5e9;
-  }
-}
+  /* DARK MODE */
+  @media (prefers-color-scheme: dark) {
+    .icon-link {
+      color: #fff;
+    }
 
-/* LIGHT MODE */
-@media (prefers-color-scheme: light) {
-  .icon-link {
-    color: #000;
+    .icon-link:hover {
+      color: #0ea5e9;
+    }
   }
 
-  .icon-link:hover {
-    color: #0ea5e9;
+  /* LIGHT MODE */
+  @media (prefers-color-scheme: light) {
+    .icon-link {
+      color: #000;
+    }
+
+    .icon-link:hover {
+      color: #0ea5e9;
+    }
   }
-}
   .about-button {
     display: inline-block;
     margin-top: 2rem;
@@ -126,11 +143,10 @@ permalink: /
       font-size: 1.5rem;
     }
   }
-
-
 </style>
 
-
-
 <!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
