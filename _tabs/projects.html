@@ -1,83 +1,321 @@
 ---
 layout: page
 title: Projects
-icon: fas fa-laptop-code
-order: 4
+icon: fas fa-computer
+order: 2
 permalink: /projects/
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 
-<section class="projects">
-  <header class="pr-hero">
-    <h1>Hands-on builds and experiments. More coming soon</h1>
+<section class="xp">
+  <header class="xp-hero">
+    <h1>Projects</h1>
+    <p>Highlights of side projects</p>
   </header>
 
-  <!-- Tabs -->
-  <nav class="pr-tabs" role="tablist" aria-label="Project categories">
-    <a class="tab active" role="tab" aria-selected="true" href="/projects/arduino/">
-      <i class="fa-solid fa-microchip"></i> Arduino
-    </a>
-    <button class="tab disabled" role="tab" aria-selected="false" disabled>
-      <i class="fa-solid fa-computer"></i> Software (soon)
-    </button>
-    <button class="tab disabled" role="tab" aria-selected="false" disabled>
-      <i class="fa-solid fa-camera"></i> Photography Tools (soon)
-    </button>
-  </nav>
+  <div class="cards">
+    <!-- CARD 1 -->
+    <article class="card">
+      <div class="card-head">
+        <img class="thumb" src="/assets/img/studyguide.jpg" alt="UofT crest" />
+        <div class="title">
+          <h3><a
+            href="https://ece-243-digital-textbook.vercel.app/"
+            >ECE243 Digital Textbook (Ongoing) </a </h3>
+        </div>
+      </div>
 
-  <!-- Content -->
-  <div class="pr-body">
-    <div class="pr-card">
-      <h3>Arduino</h3>
-      <p>
-        Locks, timers, LCD UIs, debounced inputs — little systems that just work.
-        Read the full build log + lessons learned.
-      </p>
-      <a class="cta" href="/projects/arduino/"><i class="fa-solid fa-arrow-right"></i> Open Arduino Journey</a>
-    </div>
+      <div class="card-body">
+        <p class="blurb">
+          Built an interactive, cleaner web version of ECE243 course notes to
+          make studying faster and more intuitive, including structured notes
+          and practice quizzes
+          >
+        </p>
+        <ul class="bullets">
+          <li>Reformatted lecture notes into a clean, readable digital layout optimized for quick studying.</li>
+          <li>Developed interactive quiz pages to help students practice binary, representation, and data-type concepts.</li>
+          <li>Deployed the project using Next.js and Vercel, with responsive UI and structured navigation.</li>
+        </ul>
+        <div class="tags">
+          <span>Next.js</span><span>React</span><span>Typescript</span
+          ><span>UI/UX</span><span>Web Development</span>
+        </div>
+      </div>
+    </article>
 
+    <!-- CARD 2 -->
+    <article class="card">
+      <div class="card-head">
+        <img
+          class="thumb"
+          src="/assets/img/fpga.jpg"
+          alt="Eureka! Hacks logo"
+        />
+        <div class="title">
+          <h3>FPGA Random Maze Generator & Solver</h3>
+          <div class="meta">Verilog (DE1-SoC)</div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p class="blurb">
+          Designed and implemented a fully hardware-based random maze generator, solver, and VGA renderer in Verilog on a DE1-SoC FPGA (no CPU/software)
+        </p>
+        <ul class="bullets">
+          <li>Built a dual-port BRAM memory interface to support maze generation (write) and VGA rendering (read)</li>
+          <li>
+            Implemented DFS backtracking logic with wall-state and visited-cell tracking to generate perfect mazes
+          </li>
+          <li>Developed a VGA rendering pipeline to display maze walls, start/end markers, and an overlaid solution path
+</li>
+          <li>Resolved hardware timing and randomness bugs, eliminating infinite-generation and VGA alignment issues
+</li>
+        </ul>
+        <div class="tags">
+          <span>FPGA</span><span>Verilog</span
+          ><span>Hardware</span><span>Course Final Project</span
+          ><span>Teamwork</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 3 -->
+    <article class="card">
+      <div class="card-head">
+        <img class="thumb" src="/assets/img/scrabblesolver.jpg" alt="Engineering icon" />
+        <div class="title">
+          <h3>Unscrabble</h3>
+          <div class="meta">Scrabble Move Solver</div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p class="blurb">
+          Designed and built a Scrabble solver that evaluates board state and tile rack to rank all legal moves by score
+        </p>
+        <ul class="bullets">
+          <li>Implemented a Trie-based word search engine to efficiently generate legal and valid word placements
+.</li>
+          <li>
+            Developed board-aware scoring logic to compute point values
+
+          </li>
+          <li>
+Built an Interactive Scrabble Board UI in Next.js and TypeScript, allowing users to input tiles, board positions, and preview suggested moves
+          </li>
+          <li>
+Optimized search by pruning invalid paths early in the Trie search. 
+
+          </li>
+        </ul>
+        <div class="tags">
+          <span>Typescript</span><span>Trie Algorithm</span><span>Personal Project</span
+          >
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
 <style>
-  :root{
-    --fg:#eaeaea; --muted:#b7b7b7; --bg:#0b0b0c;
-    --card:#131317; --soft:#1b1b22; --accent:#0ea5e9; --border: rgba(255,255,255,.1);
+  /* Improve cross-browser legibility, esp. on iOS */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
-  @media (prefers-color-scheme: light){
-    :root{ --fg:#151515; --muted:#666; --bg:#fff; --card:#f6f7fb; --soft:#eef1f6; --border: rgba(0,0,0,.1); }
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  .projects{ max-width:1000px; margin:3rem auto; padding:0 1rem; color:var(--fg); }
-  .pr-hero{ text-align:center; margin-bottom:1.25rem; }
-  .pr-hero p{ color:var(--muted); }
+  :root {
+    /* Dark defaults */
+    --fg: #f3f4f6; /* Main text */
+    --muted: #c7cbd1; /* Secondary text */
+    --bg: #0b0b0c; /* Page background (if used) */
+    --card: #14161a; /* Card background (high contrast) */
+    --chip: #1d2128; /* Tag background */
+    --line: rgba(255, 255, 255, 0.14);
+    --accent: #0ea5e9;
+    --ring: rgba(14, 165, 233, 0.35);
+  }
 
-  .pr-tabs{ display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; margin:1rem 0 1.25rem; }
-  .tab{
-    display:inline-flex; align-items:center; gap:.5rem;
-    padding:.6rem .9rem; border-radius:999px; border:1px solid var(--border);
-    background:var(--soft); color:var(--fg); text-decoration:none; cursor:pointer;
-    transition:transform .15s ease, background .2s ease;
+  @media (prefers-color-scheme: light) {
+    :root {
+      --fg: #111827;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --chip: #f3f4f6;
+      --line: rgba(17, 24, 39, 0.08);
+      --accent: #0ea5e9;
+      --ring: rgba(14, 165, 233, 0.2);
+    }
   }
-  .tab:hover{ transform:translateY(-2px); background:var(--accent); color:#fff; border-color:transparent; }
-  .tab.active{ background:var(--accent); color:#fff; border-color:transparent; }
-  .tab.disabled{ opacity:.5; cursor:not-allowed; }
 
-  .pr-body{ display:flex; grid-template-columns: 2fr 1fr; gap:1rem; justify-content:center }
-  @media (max-width:860px){ .pr-body{ grid-template-columns:1fr; } }
+  .xp {
+    max-width: 920px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    color: var(--fg);
+  }
+  .xp-hero {
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+  .xp-hero h1 {
+    font-size: 2rem;
+    margin: 0 0 0.35rem;
+    letter-spacing: 0.2px;
+  }
+  .xp-hero p {
+    color: var(--muted);
+    margin: 0;
+  }
 
-  .pr-card{
-    background:linear-gradient(180deg, var(--card), var(--soft));
-    border:1px solid var(--border); border-radius:16px; padding:1.25rem; 
+  .cards {
+    display: grid;
+    gap: 1rem;
   }
-  .cta{
-    display:inline-flex; gap:.5rem; align-items:center; margin-top:.6rem;
-    text-decoration:none; background:var(--accent); color:#fff; padding:.55rem .85rem; border-radius:10px;
+
+  .card {
+    background: var(--card); /* solid, high-contrast */
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: clip;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    transition:
+      transform 0.12s ease,
+      box-shadow 0.12s ease,
+      border-color 0.12s ease;
+    color: var(--fg); /* ensure card text is visible */
   }
-  .pr-coming{
-    background:var(--card); border:1px solid var(--border); border-radius:16px; padding:1.25rem;
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    border-color: var(--ring);
   }
-  .pr-coming h4{ margin-top:0; }
-  .pr-coming li{ color:var(--muted); }
+
+  .card-head {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem 0.6rem;
+  }
+  .thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    background: var(--chip);
+  }
+  .title h3 {
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1.25;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.18rem;
+  }
+  .right {
+    color: var(--muted);
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .card-body {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .blurb {
+    margin: 0.2rem 0 0.7rem;
+  }
+  .bullets {
+    margin: 0 0 0.6rem 1.2rem;
+  }
+  .bullets li {
+    margin: 0.34rem 0;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.2rem;
+  }
+  .tags span {
+    font-size: 0.82rem;
+    padding: 0.36rem 0.6rem;
+    border-radius: 999px;
+    background: var(--chip);
+    border: 1px solid var(--line);
+    color: var(--fg);
+  }
+
+  /* Fancy heading underline */
+  .xp-hero h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+  }
+  .xp-hero h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 84px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+
+  /* Accessibility focus styles */
+  .card:focus-within {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    box-shadow:
+      0 0 0 6px var(--ring),
+      0 10px 24px rgba(0, 0, 0, 0.24);
+  }
+
+  /* Mobile readability tweaks */
+  @media (max-width: 560px) {
+    .card-head {
+      grid-template-columns: 52px 1fr auto;
+      padding: 0.9rem 0.9rem 0.55rem;
+      gap: 0.8rem;
+    }
+    .thumb {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+    }
+    .card-body {
+      padding: 0 0.9rem 0.9rem 0.9rem;
+    }
+    .meta,
+    .right {
+      font-size: 0.98rem;
+    } /* slightly larger */
+    .bullets li {
+      line-height: 1.45;
+    }
+  }
+
+  /* Users who force dark mode on mobile but the site is light — keep contrast high */
+  @media (prefers-contrast: more) {
+    :root {
+      --muted: color-mix(in oklab, var(--fg) 70%, transparent);
+    }
+    .card {
+      border-color: var(--ring);
+    }
+  }
 </style>
