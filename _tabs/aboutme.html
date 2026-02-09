@@ -6,13 +6,20 @@ order: 1
 permalink: /aboutme/
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 
 <div class="about-wrap">
   <!-- Sticky Profile Card -->
   <aside class="profile-card">
     <div class="pfp">
-      <img src="/assets/img/avatar.png" alt="Zain in a suit portrait" loading="eager" />
+      <img
+        src="/assets/img/avatar.png"
+        alt="Zain in a suit portrait"
+        loading="eager"
+      />
     </div>
     <h1 class="name">Zain Nawaz</h1>
     <p class="role">Electrical Engineering @ UofT · Photographer</p>
@@ -24,7 +31,9 @@ permalink: /aboutme/
       </div>
       <div class="meta">
         <span class="label">Focus</span>
-        <span class="value">Event & Street Photography, Arduino, Robotics </span>
+        <span class="value"
+          >Event & Street Photography, Arduino, Robotics
+        </span>
       </div>
       <div class="meta">
         <span class="label">Now</span>
@@ -33,23 +42,42 @@ permalink: /aboutme/
     </div>
 
     <div class="socials">
-      <a href="https://github.com/ZainNawaz123" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/zain-nawaz-221998183" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://instagram.com/zan.photography_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a
+        href="https://github.com/ZainNawaz123"
+        target="_blank"
+        aria-label="GitHub"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://linkedin.com/in/zain-nawaz-221998183"
+        target="_blank"
+        aria-label="LinkedIn"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a
+        href="https://instagram.com/zan.photography_"
+        target="_blank"
+        aria-label="Instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
     </div>
 
-<div class="cta-links">
-  <a href="{{ '/projects/' | relative_url }}">Projects</>
-  <a href="{{ '/experience/' | relative_url }}">Experience</a>
-  <a href="{{ '/projects/' | relative_url }}">Projects</a>
-  <a href="{{ '/photography/' | relative_url }}">Photography</a>
-</div>  </aside>
+    <div class="cta-links">
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/experience/' | relative_url }}">Experience</a>
+      <a href="{{ '/photography/' | relative_url }}">Photography</a>
+    </div>
+  </aside>
 
   <!-- Main Content -->
   <main class="about-main">
     <!-- Photo Banner -->
     <section class="photo-banner">
-      <img src="/assets/img/photo.png" alt="Zain shooting a photo" loading="lazy" />
+      <img
+        src="/assets/img/photo.png"
+        alt="Zain shooting a photo"
+        loading="lazy"
+      />
       <div class="banner-caption">
         <span class="dot"></span> Capturing moments between noise & silence.
       </div>
@@ -59,13 +87,16 @@ permalink: /aboutme/
     <section class="story">
       <h2>Hi, I’m Zain.</h2>
       <p>
-        I’m an Electrical Engineering student who likes to make things that <em>work</em> and photos that <em>feel</em>.
-        On the engineering side: Arduino builds, sensors, and small mechatronics that turn “what if” into “it works.”
-        On the photography side: concerts, street, and honest frames from around Toronto.
+        I’m an Electrical Engineering student who likes to make things that
+        <em>work</em> and photos that <em>feel</em>. On the engineering side:
+        Arduino builds, sensors, and small mechatronics that turn “what if” into
+        “it works.” On the photography side: concerts, street, and honest frames
+        from around Toronto.
       </p>
       <p>
-        I’m motivated by iterative craft — small improvements compounding into something you’re proud to ship (or post).
-        If it blends creativity and systems thinking, I’m in.
+        I’m motivated by iterative craft — small improvements compounding into
+        something you’re proud to ship (or post). If it blends creativity and
+        systems thinking, I’m in.
       </p>
     </section>
 
@@ -105,8 +136,9 @@ permalink: /aboutme/
       <div class="card">
         <h4>⚡ Engineering</h4>
         <p>
-          I build small systems with microcontrollers, sensors, and simple mechanics. The fun is in constraints:
-          power budgets, debouncing, clean state machines, and code you can trust when hardware jitters.
+          I build small systems with microcontrollers, sensors, and simple
+          mechanics. The fun is in constraints: power budgets, debouncing, clean
+          state machines, and code you can trust when hardware jitters.
         </p>
         <div class="pill-row">
           <span class="pill">Arduino</span>
@@ -118,8 +150,8 @@ permalink: /aboutme/
       <div class="card">
         <h4>📷Photography</h4>
         <p>
-          Street & events — fast decisions, honest light. I chase composition and timing over heavy edits.
-          If the photo tells the truth, I keep it.
+          Street & events — fast decisions, honest light. I chase composition
+          and timing over heavy edits. If the photo tells the truth, I keep it.
         </p>
         <div class="pill-row">
           <span class="pill">Street</span>
@@ -149,10 +181,10 @@ permalink: /aboutme/
     --card: #131317;
     --soft: #1b1b22;
     --accent: #0ea5e9; /* matches your home page */
-    --shadow: 0 8px 30px rgba(0,0,0,.35);
-    --pill-bg: #1d2128;                 /* dark bg */
-  --pill-fg: #f7f8fa;                 /* dark text */
-  --pill-bd: rgba(255,255,255,.22);   /* dark border */
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    --pill-bg: #1d2128; /* dark bg */
+    --pill-fg: #f7f8fa; /* dark text */
+    --pill-bd: rgba(255, 255, 255, 0.22); /* dark border */
   }
   @media (prefers-color-scheme: light) {
     :root {
@@ -161,10 +193,10 @@ permalink: /aboutme/
       --muted: #666;
       --card: #f6f7fb;
       --soft: #eef1f6;
-      --shadow: 0 8px 30px rgba(0,0,0,.08);
-          --pill-bg: #eef2f7;               /* light bg */
-    --pill-fg: #0f172a;               /* light text */
-    --pill-bd: rgba(15,23,42,.16);    /* light border */
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      --pill-bg: #eef2f7; /* light bg */
+      --pill-fg: #0f172a; /* light text */
+      --pill-bd: rgba(15, 23, 42, 0.16); /* light border */
     }
   }
 
@@ -183,7 +215,7 @@ permalink: /aboutme/
     top: 2rem;
     align-self: start;
     background: linear-gradient(180deg, var(--card), var(--soft));
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
@@ -195,7 +227,7 @@ permalink: /aboutme/
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 1rem;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
   .pfp img {
     width: 100%;
@@ -211,42 +243,80 @@ permalink: /aboutme/
     color: var(--muted);
     margin: 0 0 1rem;
   }
-  .quick-meta { display: grid; gap: .75rem; margin: 1rem 0 1.25rem; }
-  .meta { display: grid; gap: .15rem; }
-  .meta .label { color: var(--muted); font-size: .8rem; letter-spacing: .02em; }
-  .meta .value { font-size: .95rem; }
-
-  .socials { display: flex; gap: .8rem; margin-bottom: 1rem; }
-  .socials a {
-    width: 40px; height: 40px; display: grid; place-items: center;
-    border-radius: 10px; background: var(--soft);
-    color: var(--fg); text-decoration: none; border: 1px solid rgba(255,255,255,0.06);
-    transition: transform .2s ease, background .2s ease, color .2s ease;
+  .quick-meta {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1rem 0 1.25rem;
   }
-  .socials a:hover { transform: translateY(-2px); background: var(--accent); color: #fff; }
+  .meta {
+    display: grid;
+    gap: 0.15rem;
+  }
+  .meta .label {
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+  }
+  .meta .value {
+    font-size: 0.95rem;
+  }
+
+  .socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .socials a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: var(--soft);
+    color: var(--fg);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease,
+      color 0.2s ease;
+  }
+  .socials a:hover {
+    transform: translateY(-2px);
+    background: var(--accent);
+    color: #fff;
+  }
 
   .cta {
     display: inline-block;
-    margin-top: .5rem;
-    padding: .6rem 1rem;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
     border-radius: 10px;
     text-decoration: none;
     color: #fff;
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.15);
-    transition: background .2s ease, color .2s ease, border-color .2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
   }
-  .cta:hover { background: var(--accent); border-color: var(--accent); }
+  .cta:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
 
   /* Main column */
-  .about-main { color: var(--fg); }
+  .about-main {
+    color: var(--fg);
+  }
 
   .photo-banner {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
   .photo-banner img {
     width: 100%;
@@ -256,127 +326,195 @@ permalink: /aboutme/
   }
   .banner-caption {
     position: absolute;
-    bottom: 14px; left: 14px;
-    background: rgba(0,0,0,.45);
+    bottom: 14px;
+    left: 14px;
+    background: rgba(0, 0, 0, 0.45);
     color: #fff;
-    padding: .5rem .75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 999px;
     backdrop-filter: blur(6px);
-    font-size: .9rem;
-    display: inline-flex; align-items: center; gap: .5rem;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   .banner-caption .dot {
-    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
     box-shadow: 0 0 10px var(--accent);
   }
 
-  .story { margin: 2rem 0 1rem; }
-  .story h2 { margin: 0 0 .5rem; font-size: 1.6rem; }
-  .story p { color: var(--fg); opacity: .92; line-height: 1.7; }
+  .story {
+    margin: 2rem 0 1rem;
+  }
+  .story h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+  }
+  .story p {
+    color: var(--fg);
+    opacity: 0.92;
+    line-height: 1.7;
+  }
 
   .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem; margin: 2rem 0;
+    gap: 1rem;
+    margin: 2rem 0;
   }
   .stat {
     background: var(--card);
-    border: 1px solid rgba(255,255,255,0.07);
+    border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 14px;
     padding: 1rem 1.25rem;
     text-align: center;
   }
-  .stat .num { display: block; font-size: 1.6rem; font-weight: 700; color: var(--accent); }
-  .stat .label { color: var(--muted); font-size: .9rem; }
+  .stat .num {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat .label {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
 
-  .fun-facts { margin: 2.5rem 0 1rem; }
-  .fun-facts h3 { margin-bottom: .75rem; }
+  .fun-facts {
+    margin: 2.5rem 0 1rem;
+  }
+  .fun-facts h3 {
+    margin-bottom: 0.75rem;
+  }
   .chips {
-    list-style: none; padding: 0; margin: 0;
-    display: flex; flex-wrap: wrap; gap: .6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
   }
   .chips li {
-    padding: .55rem .8rem;
+    padding: 0.55rem 0.8rem;
     background: var(--soft);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 999px; font-size: .92rem;
-    transition: transform .15s ease, background .2s ease, border-color .2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    font-size: 0.92rem;
+    transition:
+      transform 0.15s ease,
+      background 0.2s ease,
+      border-color 0.2s ease;
     will-change: transform;
   }
-  .chips li:hover { transform: translateY(-2px); background: var(--accent); color: #fff; border-color: transparent; }
+  .chips li:hover {
+    transform: translateY(-2px);
+    background: var(--accent);
+    color: #fff;
+    border-color: transparent;
+  }
 
   .twocol {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0 3rem;
   }
   .card {
     background: var(--card);
-    border: 1px solid rgba(255,255,255,0.07);
+    border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 16px;
     padding: 1.25rem;
     box-shadow: var(--shadow);
   }
-  .card h4 { margin: 0 0 .4rem; }
-  .card p { color: var(--fg); opacity: .92; }
-  .pill-row {   display:flex;
-  flex-wrap:wrap;
-  gap:.5rem;
-  margin-top:.6rem; }
+  .card h4 {
+    margin: 0 0 0.4rem;
+  }
+  .card p {
+    color: var(--fg);
+    opacity: 0.92;
+  }
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+  }
   .pill {
-    display:inline-block;
-  font-size:.95rem;                    /* bumped for mobile readability */
-  line-height:1;
-  padding:.46rem .78rem;
-  border-radius:999px;
-  background:var(--pill-bg);
-  color:var(--pill-fg);
-  border:1px solid var(--pill-bd);
-  white-space:nowrap;
-  text-decoration:none;
-  /* ensure other site styles can’t dim them */
-  opacity:1 !important;;
+    display: inline-block;
+    font-size: 0.95rem; /* bumped for mobile readability */
+    line-height: 1;
+    padding: 0.46rem 0.78rem;
+    border-radius: 999px;
+    background: var(--pill-bg);
+    color: var(--pill-fg);
+    border: 1px solid var(--pill-bd);
+    white-space: nowrap;
+    text-decoration: none;
+    /* ensure other site styles can’t dim them */
+    opacity: 1 !important;
   }
 
-  @media (max-width:560px){
-  .pill{ font-size:1rem; padding:.5rem .82rem; }
-}
+  @media (max-width: 560px) {
+    .pill {
+      font-size: 1rem;
+      padding: 0.5rem 0.82rem;
+    }
+  }
 
-  .contact { margin: 2rem 0 5rem; }
+  .contact {
+    margin: 2rem 0 5rem;
+  }
   .contact-card {
     background: linear-gradient(135deg, var(--soft), var(--card));
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     padding: 1.5rem;
     text-align: center;
     box-shadow: var(--shadow);
   }
   .cta.solid {
-    margin-top: .6rem;
+    margin-top: 0.6rem;
     background: var(--accent);
-    color: #fff; border-color: transparent;
+    color: #fff;
+    border-color: transparent;
   }
 
   /* Responsive */
   @media (max-width: 980px) {
-    .about-wrap { grid-template-columns: 1fr; }
-    .profile-card { position: relative; top: 0; }
+    .about-wrap {
+      grid-template-columns: 1fr;
+    }
+    .profile-card {
+      position: relative;
+      top: 0;
+    }
   }
   @media (max-width: 720px) {
-    .stats { grid-template-columns: 1fr; }
-    .twocol { grid-template-columns: 1fr; }
-    .photo-banner img { height: 260px; }
+    .stats {
+      grid-template-columns: 1fr;
+    }
+    .twocol {
+      grid-template-columns: 1fr;
+    }
+    .photo-banner img {
+      height: 260px;
+    }
   }
 </style>
 
 <script>
   // Shuffle fun-fact chips so the page feels fresh
-  (function shuffleChips(){
-    const ul = document.getElementById('facts');
-    if(!ul) return;
+  (function shuffleChips() {
+    const ul = document.getElementById("facts");
+    if (!ul) return;
     const nodes = Array.from(ul.children);
     for (let i = nodes.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [nodes[i], nodes[j]] = [nodes[j], nodes[i]];
     }
-    nodes.forEach(n => ul.appendChild(n));
+    nodes.forEach((n) => ul.appendChild(n));
   })();
 </script>
